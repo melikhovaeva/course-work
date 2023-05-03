@@ -13,15 +13,23 @@ session_start();
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="active" href="./register.php">Регистрация</a>
+            <a href="./index.php">Авторизация</a>
+            <a href="./addPost.php">Посты</a>
+        </nav>
+    </header>
 
     <!-- Профиль -->
-
-    <form>
-        <img src="<?= $_SESSION['user']['avatar'] ?>" width="200" alt="">
-        <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
-        <a href="#"><?= $_SESSION['user']['email'] ?></a>
-        <a href="./vendor/logout.php" class="logout">Выход</a>
-    </form>
+    <main>
+        <form>
+            <img src="<?= $_SESSION['user']['avatar'] ?>" width="200" alt="">
+            <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
+            <a href="#"><?= $_SESSION['user']['email'] ?></a>
+            <a href="./vendor/logout.php" class="logout">Выход</a>
+        </form>
+    </main>
 
 </body>
 </html>

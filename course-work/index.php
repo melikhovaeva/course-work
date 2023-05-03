@@ -15,13 +15,13 @@ session_start();
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
-            <a href="./register.php">Регистрация</a>
-            <a class="active" href="./index.php">Авторизация</a>
-            <a href="./addPost.php">Посты</a>
+            <a class="active" href="">Регистрация</a>
+            <a href="#contact">Авторизация</a>
+            <a href="#about">Посты</a>
         </nav>
-    </header>
+    </header> -->
 
 <!-- Форма авторизации -->
     <main>
